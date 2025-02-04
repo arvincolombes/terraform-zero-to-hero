@@ -7,7 +7,7 @@ module "ec2_instance" {
   ami_value = "ami-053b0d53c279acc90" # replace this
   instance_type_value = "t2.micro"
   subnet_id_value = "subnet-019ea91ed9b5252e7". # replace this
-
+  tag_name = "arvinkumar"
 data "aws_key_paire" "oregion"{
 	key_name = "Oregon"
    }
