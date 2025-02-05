@@ -1,12 +1,12 @@
 resource "aws_instance" "main" {
-count var.ec2-cout 
-instance_type var.instance_type 
-ami var.ami 
-subnet id var.subnet id 
+count               = var.ec2-cout 
+instance_type       = var.instance_type 
+ami                 = var.ami 
+subnet_id           = var.subnet id 
 vpc_security_group_ids = [aws_security_group.sgs.id] 
-key_name var.key_name 
+key_name            = var.key_name 
 tags { 
-"Name" "demomodule"
+"Name"= "demomodule"
  }
 }
 resource "aws_security_group" "sgs" { 
