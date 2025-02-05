@@ -28,3 +28,8 @@ port     = "22"
 protocal = "tcp" 
 cidrs    = [""0.0.0.0/0"] 
 }
+variable "key_name" {
+description "please provide the key name" 
+default = "sdkjfhsdfhsdkjhgkfsd"
+}
+
