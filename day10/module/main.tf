@@ -1,3 +1,6 @@
+provider "aws" {
+  region = "us-east-1"
+}
 module "demo-web" 
 source = "./modules/ec2" 
 ami "ami-09d3b3274b6c5d4aa" 
