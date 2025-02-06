@@ -1,4 +1,4 @@
-resource "aws_instance" "main" {
+resource "aws_instance" "ec2" {
 count               = var.ec2-cout 
 instance_type       = var.instance_type 
 ami                 = var.ami 
